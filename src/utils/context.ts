@@ -10,7 +10,7 @@ export const ShmitterContext = createContext<ShmitterContextValue>({
         followers: 0,
         following: 0
     },
-    changeAvatar: (url: string) => console.log(url),
-    changeName: (name: string) => console.log(name),
+    changeAvatar: (url: string| null) => console.log(url),
+    changeName: (name: string | null) => console.log(name),
     changeStats: (statsType: StatsType, sum: number) => console.log(statsType, sum)
 });
